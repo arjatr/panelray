@@ -372,15 +372,15 @@ show_status() {
     check_status
     case $? in
         0)
-            echo -e "Estado del panel: ${green}se está ejecutando{plain}"
+            echo -e "Estado del panel: ${green}se está ejecutando ${plain}"
             show_enable_status
             ;;
         1)
-            echo -e "Estado del panel: ${yellow}No corriendo{plain}"
+            echo -e "Estado del panel: ${yellow}No corriendo ${plain}"
             show_enable_status
             ;;
         2)
-            echo -e "Estado del panel: ${red}No está instalado{plain}"
+            echo -e "Estado del panel: ${red}No está instalado ${plain}"
     esac
     show_v2ray_status
 }
@@ -406,9 +406,9 @@ check_v2ray_status() {
 show_v2ray_status() {
     check_v2ray_status
     if [[ $? == 0 ]]; then
-        echo -e "v2ray estado: ${green}Ejecutar${plain}"
+        echo -e "v2ray estado: ${green}Ejecutar ${plain}"
     else
-        echo -e "v2ray estado: ${red}No corras${plain}"
+        echo -e "v2ray estado: ${red}No corras ${plain}"
     fi
 }
 
