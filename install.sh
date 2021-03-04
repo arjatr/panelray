@@ -229,8 +229,7 @@ install_v2-ui() {
     echo -e ""
     echo -e "Si es para actualizar el panel, acceda al panel como lo hizo antes"
     echo -e ""
-    curl -o /usr/bin/v2-ui -Ls https://raw.githubusercontent.com/sprov065/v2-ui/master/v2-ui.sh
-    chmod +x /usr/bin/v2-ui
+
    
 }
 
