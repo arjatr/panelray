@@ -907,7 +907,7 @@ show_v2ray_status() {
     check_v2ray_status
     if [[ $? == 0 ]]; then
         echo -e "v2ray estado: ${green}Ejecutando \033[1;37m"
-    else\033[1;37m"
+    else
         echo -e "v2ray estado: ${red}No corriendo \033[1;37m"
     fi
 }
