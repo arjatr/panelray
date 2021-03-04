@@ -4,7 +4,7 @@
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
-plain='\033[0m'
+plain='\033[1;37m'
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}error: ${plain}Este script debe ejecutarse como usuario root！\n" && exit 1
