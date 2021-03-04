@@ -387,9 +387,9 @@ show_status() {
 show_enable_status() {
     check_enabled
     if [[ $? == 0 ]]; then
-        echo -e "Ya sea para comenzar automáticamente después de arrancar: ${green}Es{plain}"
+        echo -e "Ya sea para comenzar automáticamente después de arrancar: ${green}Es\033[1;37m"
     else
-        echo -e "Ya sea para comenzar automáticamente después de arrancar: ${red}No{plain}"
+        echo -e "Ya sea para comenzar automáticamente después de arrancar: ${red}\033[1;37m"
     fi
 }
 
@@ -405,9 +405,9 @@ check_v2ray_status() {
 show_v2ray_status() {
     check_v2ray_status
     if [[ $? == 0 ]]; then
-        echo -e "v2ray estado: ${green}Ejecutar ${plain}"
-    else
-        echo -e "v2ray estado: ${red}No corras ${plain}"
+        echo -e "v2ray estado: ${green}Ejecutando \033[1;37m"
+    else\033[1;37m"
+        echo -e "v2ray estado: ${red}No corriendo \033[1;37m"
     fi
 }
 
