@@ -129,11 +129,10 @@ uninstall() {
     systemctl reset-failed
     rm /etc/v2-ui/ -rf
     rm /usr/local/v2-ui/ -rf
-	rm /usr/bin/v2-ui -f
     echo ""
-       echo -e "\033[0m\e[35m------------------------------------\033[1;37m"
-	    echo -e "\033[0m\e[1;32m     SE desintalo con exto!"
-	    echo -e "\033[0m\e[35m------------------------------------\033[1;37m"
+    echo -e "\033[0m\e[35m------------------------------------\033[1;37m"
+    echo -e "\033[0m\e[1;32m     SE desintalo con exto!"
+    echo -e "\033[0m\e[35m------------------------------------\033[1;37m"
 
 
     if [[ $# == 0 ]]; then
