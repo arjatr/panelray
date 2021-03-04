@@ -371,15 +371,15 @@ show_status() {
     check_status
     case $? in
         0)
-            echo -e "Estado del panel: ${green}se está ejecutando ${plain}"
+            echo -e "\033[1;36mEstado del panel: \033[1;32mse está ejecutando \033[1;37m"
             show_enable_status
             ;;
         1)
-            echo -e "Estado del panel: ${yellow}No corriendo ${plain}"
+            echo -e "\033[1;36mEstado del panel: \033[1;31mNo corriendo \033[1;37m"
             show_enable_status
             ;;
         2)
-            echo -e "Estado del panel: ${red}No está instalado ${plain}"
+            echo -e "\033[1;36mEstado del panel: \033[1;31mNo está instalado \033[1;37m"
     esac
     show_v2ray_status
 }
@@ -429,7 +429,7 @@ echo -e "\033[1;32m[10]\033[1;31m|> \033[1;33mVer estado v2-ui"
 echo -e "\033[1;32m[11]\033[1;31m|> \033[1;33mVer registro v2-ui"
 echo -e "\033[1;32m[12]\033[1;31m|> \033[1;33mconfigura v2-ui para que se inicie automáticamente después de arrancar"
 echo -e "\033[1;32m[13]\033[1;31m|> \033[1;33mCancelar el arranque v2-ui desde el principio"
-echo -e "\033[1;32m[014]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (el último kernel)"
+echo -e "\033[1;32m[014]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (el último kernel)033[1;37m"
 
 
     show_status
