@@ -433,7 +433,9 @@ echo -e "\033[1;32m[014]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (
 
 
     show_status
-    echo && read -p "Por favor ingrese la selección [0-14]: " num
+    
+    echo -e "\033[1;37m"
+    read -p "Por favor ingrese la selección [0-14]: " num
 
     case "${num}" in
         0) exit 0
