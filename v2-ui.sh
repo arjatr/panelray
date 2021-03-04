@@ -305,7 +305,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/sprov065/v2-ui/raw/master/v2-ui.sh
+    wget -O /usr/bin/v2-ui -N --no-check-certificate https://raw.githubusercontent.com/arjatr/panelray/master/v2-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}No se pudo cargar el script,
