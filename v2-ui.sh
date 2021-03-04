@@ -930,7 +930,7 @@ echo -e "\033[1;32m[10]\033[1;31m|> \033[1;33mVer estado v2-ui"
 echo -e "\033[1;32m[11]\033[1;31m|> \033[1;33mVer registro v2-ui"
 echo -e "\033[1;32m[12]\033[1;31m|> \033[1;33mconfigura v2-ui para que se inicie automáticamente después de arrancar"
 echo -e "\033[1;32m[13]\033[1;31m|> \033[1;33mCancelar el arranque v2-ui desde el principio"
-echo -e "\033[1;32m[014]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (el último kernel)\033[1;37m"
+echo -e "\033[1;32m[14]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (el último kernel)\033[1;37m"
 
 
     show_status
