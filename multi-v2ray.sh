@@ -1,6 +1,5 @@
 #!/bin/bash
-# Author: Jrohy
-# github: https://github.com/Jrohy/multi-v2ray
+
 
 #定时任务北京执行时间(0~23)
 BEIJING_UPDATE_TIME=3
@@ -18,7 +17,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://raw.githubusercontent.com/powermx/multi-v2ray/master"
+BASE_SOURCE_PATH="https://github.com/arjatr/panelray/blob/master/"
 
 CLEAN_IPTABLES_SHELL="$BASE_SOURCE_PATH/v2ray_util/global_setting/clean_iptables.sh"
 
