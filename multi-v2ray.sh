@@ -19,11 +19,11 @@ CHINESE=0
 
 BASE_SOURCE_PATH="https://github.com/arjatr/panelray/blob/master/"
 
-CLEAN_IPTABLES_SHELL="$BASE_SOURCE_PATH/v2ray_util/global_setting/clean_iptables.sh"
+CLEAN_IPTABLES_SHELL="$BASE_SOURCE_PATH/clean_iptables.sh"
 
 BASH_COMPLETION_SHELL="$BASE_SOURCE_PATH/v2ray.bash"
 
-UTIL_CFG="$BASE_SOURCE_PATH/v2ray_util/util_core/util.cfg"
+UTIL_CFG="$BASE_SOURCE_PATH/util.cfg"
 
 UTIL_PATH="/etc/v2ray_util/util.cfg"
 
