@@ -290,19 +290,8 @@ show_log() {
     fi
 }
 
-install_bbr() {
-    bash <(curl -L -s https://raw.githubusercontent.com/sprov065/blog/master/bbr.sh)
-    if [[ $? == 0 ]]; then
-        echo ""
-        echo -e "${green}instalación bbr 成功${plain}"
-    else
-        echo ""
-        echo -e "${red}下No se pudo cargar el script de instalación de bbr,
-		verifique si la máquina se puede conectarGithub${plain}"
-    fi
 
-    before_show_menu
-}
+
 
 update_shell() {
     wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/sprov065/v2-ui/raw/master/v2-ui.sh
@@ -430,8 +419,6 @@ echo -e "\033[1;32m[10]\033[1;31m|> \033[1;33mVer estado v2-ui"
 echo -e "\033[1;32m[11]\033[1;31m|> \033[1;33mVer registro v2-ui"
 echo -e "\033[1;32m[12]\033[1;31m|> \033[1;33mconfigura v2-ui para que se inicie automáticamente después de arrancar"
 echo -e "\033[1;32m[13]\033[1;31m|> \033[1;33mCancelar el arranque v2-ui desde el principio"
-echo -e "\033[1;32m[14]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (el último kernel)"
-
 
     show_status
     echo && read -p "Por favor ingrese la selección [0-14]: " num
@@ -462,8 +449,6 @@ echo -e "\033[1;32m[14]\033[1;31m|> \033[1;33mInstalación con un clic de bbr (e
 		12) check_install && enable
         ;;
         13) check_install && disable
-        ;;
-        14) install_bbr
         ;;
         *) echo -e "${red}Ingrese el número correcto [0-14]${plain}"
         ;;
