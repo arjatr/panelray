@@ -134,7 +134,7 @@ echo -e "${col3}LINK :http://$IP:65432 "
 }
 
 update() {
-    confirm "Esta función reinstalará a la fuerza la última versión actual, los datos no se perderán, si continuar?" "n"
+    confirm "Esta función reinstalará a la fuerza la última versión actual?" "y"
     if [[ $? != 0 ]]; then
         echo -e "${red}Cancelado{plain}"
         if [[ $# == 0 ]]; then
