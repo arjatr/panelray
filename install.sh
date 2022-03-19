@@ -143,20 +143,20 @@ install_v2-ui() {
     fi
 
     if  [ $# == 0 ] ;then
-        last_version=$(curl -Ls "https://api.github.com/repos/sprov065/v2-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://api.github.com/repos/vaxilu/x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
             echo -e "${red}检测 v2-ui 版本失败，可能是超出 Github API 限制，请稍后再试，或手动指定 v2-ui 版本安装${plain}"
             exit 1
         fi
         echo -e "检测到 v2-ui 最新版本：${last_version}，开始安装"
-        wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz https://github.com/sprov065/v2-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz https://github.com/vaxilu/x-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 v2-ui 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/sprov065/v2-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz"
+        url="https://github.com/vaxilu/x-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz"
         echo -e "开始安装 v2-ui v$1"
         wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
@@ -350,7 +350,7 @@ install_v2-ui() {
     fi
 
     if  [ $# == 0 ] ;then
-        last_version=$(curl -Ls "https://api.github.com/repos/sprov065/v2-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://api.github.com/repos/vaxilu/x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 #!/usr/bin/env bash
 
 red='\033[0;31m'
@@ -502,14 +502,14 @@ install_v2-ui() {
             exit 1
         fi
         echo -e "检测到 v2-ui 最新版本：${last_version}，开始安装"
-        wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz https://github.com/sprov065/v2-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz https://github.com/vaxilu/x-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 v2-ui 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/sprov065/v2-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz"
+        url="https://github.com/vaxilu/x-ui/releases/download/${last_version}/v2-ui-linux-${arch}.tar.gz"
         echo -e "开始安装 v2-ui v$1"
         wget -N --no-check-certificate -O /usr/local/v2-ui-linux-${arch}.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
